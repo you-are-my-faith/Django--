@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>笔记列表</title>
+</head>
+<body>
+<p>
+    {% for note in notes_list %}
+        {{ note.id }}
+        {{ note.title }}
+        {{ note.updated_time }}
+    {% endfor %}
+</p>
+</body>
+</html>
